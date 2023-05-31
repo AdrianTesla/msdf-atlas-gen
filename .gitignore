@@ -1,0 +1,5 @@
+﻿bin
+bin-int
+*.vcxproj
+*.filters
+*.sln
