@@ -9,6 +9,8 @@ project "msdf-atlas-gen"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	disablewarnings { "26451","26495","6285","26437","26450","4267" }
+
 	files
 	{
 		"msdf-atlas-gen/**.h",
@@ -18,6 +20,7 @@ project "msdf-atlas-gen"
 
 	includedirs
 	{
+		"artery-font-format",
 		"msdf-atlas-gen",
 		"msdfgen",
 		"msdfgen/include"
@@ -25,7 +28,8 @@ project "msdf-atlas-gen"
 
 	defines
 	{
-		"_CRT_SECURE_NO_WARNINGS"
+		"_CRT_SECURE_NO_WARNINGS",
+		"MSDF_ATLAS_PUBLIC=const"
 	}
 
 	links
