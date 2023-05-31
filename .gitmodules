@@ -4,6 +4,3 @@
 [submodule "msdfgen"]
 	path = msdfgen
 	url = https://github.com/AdrianTesla/msdfgen.git
-[submodule "freetype"]
-	path = freetype
-	url = https://github.com/AdrianTesla/freetype
